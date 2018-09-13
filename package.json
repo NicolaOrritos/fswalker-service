@@ -17,6 +17,6 @@
   },
   "scripts": {
     "debug": "node_modules/.bin/ndb node app.js",
-    "start": "./app.js"
+    "start": "node ./app.js"
   }
 }

@@ -28,9 +28,13 @@ server.use(restify.plugins.bodyParser())
 server.get('/status', status)
 
 
-server.get('/hello/:name', (req, res, next) =>
+server.get('/fs/*', (req, res, next) =>
 {
-    res.send('Hello ' + req.params.name)
+    const path = req.url.slice('/fs/'.length)
+
+    console.log(`Asked for path "${path}"`)
+
+    res.send('Hello ' + path)
 
     next()
 })
