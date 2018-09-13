@@ -1,0 +1,22 @@
+{
+  "name": "skv16",
+  "version": "0.1.0",
+  "description": "skv-16 prototype",
+  "main": "index.js",
+  "author": "I-b4ll",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "getenv": "^0.7.0",
+    "restify": "^7.2.1",
+    "restify-errors": "^6.1.1"
+  },
+  "devDependencies": {
+    "ndb": "1.0.17",
+    "eslint": "^5.5.0"
+  },
+  "scripts": {
+    "debug": "node_modules/.bin/ndb node app.js",
+    "start": "./app.js"
+  }
+}

@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  middleware:
+    image: microsvc:latest
+    command:
+      npm start
+    volumes:
+      - ./:/opt/data:rw
+    ports:
+      - 3000:3000
