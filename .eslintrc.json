@@ -9,10 +9,6 @@
         "sourceType": "module"
     },
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
         "linebreak-style": [
             "error",
             "windows"
@@ -25,6 +21,8 @@
             "error",
             "never"
         ],
-        "no-console": "off"
+        "no-console": "off",
+        "require-yield": "error",
+        "require-await": "error"
     }
 }
