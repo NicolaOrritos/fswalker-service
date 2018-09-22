@@ -1,9 +1,9 @@
 {
-  "name": "skv16",
+  "name": "fswalker-service",
   "version": "0.1.0",
-  "description": "skv-16 prototype",
+  "description": "Filesystem walker service",
   "main": "index.js",
-  "author": "I-b4ll",
+  "author": "Nicola Orritos",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^6.0.0",
