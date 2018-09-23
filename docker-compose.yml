@@ -2,10 +2,16 @@ version: '2.1'
 
 services:
   middleware:
-    image: microsvc:latest
+    container_name: fswalker
+    build:
+      context: .
+      dockerfile: Dockerfile
     command:
       npm start
     volumes:
-      - ./:/opt/data:rw
+      - ./:/var/data:ro
     ports:
       - 3000:3000
+    restart: on-failure
+    env_file:
+      - .env

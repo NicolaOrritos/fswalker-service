@@ -6,7 +6,7 @@ A JSON microservice to expose your filesystem
 
 ## Installing
 
-Simply clone this repo, then `npm i --production` inside it.
+Simply clone this repo, then `npm i --production` inside it, unless you're going to use Docker, then run `docker-compose build` instead.
 
 
 ## Configuring
